@@ -8,7 +8,8 @@ https://www.youtube.com/watch?v=9JTR7Y_aHuw
 http://start.spring.io/starter.zip?style=web
 
 2. CodenvySpringBootRunner
-FROM codenvy/jdk7
+#FROM codenvy/jdk7
+FROM java:8
 EXPOSE 8080
 ENV CODENVY_APP_PORT_8080_HTTP 8080
 ADD $app$ /home/user/$app$
